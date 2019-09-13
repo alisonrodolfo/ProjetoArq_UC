@@ -1,0 +1,37 @@
+
+==============SEQUÊNCIA DE FIBONACCI=============
+M0 é o tamanho da seguencia.
+R0 é o paramentro 1
+R1 é o paramentro 2
+M1 é auxiliar
+
+LOAD R0 0
+LOAD R1 1
+LOAD M0 10
+LOAD M1 0
+ADD M1 R0 R1
+STORE R0 R1
+STORE R1 M1
+SUB M0 1
+JNS I10
+JMP I4
+END  
+
+================================================
+
+===================FATORIAL=====================
+
+R0 é parametro inicial
+R1 é o tamanho do fatorial
+
+LOAD R0 1
+LOAD R1 5
+MULT R0 R0 R1
+SUB R1 1
+JZ I6
+JMP I2
+END
+
+
+================================================
+
